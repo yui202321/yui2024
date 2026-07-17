@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Works — yui2024</title>
+  <meta name="description" content="yui2024 の制作物。歌唱AI「ARIA SVS」ほか。" />
+  <link rel="icon" href="assets/img/my_account.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700;800&family=M+PLUS+Rounded+1c:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <span class="brand-cursor">&gt;</span>
+        <span>yui2024</span>
+        <span class="brand-underscore" aria-hidden="true"></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="menu">MENU</button>
+      <nav class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="works.html" class="is-active">Works</a>
+        <a href="news.html">News</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="eyebrow">// works.md</div>
+        <h1><span style="color:var(--pink);">&gt;</span> Works</h1>
+        <p>今作っているもの・作ったものたち。</p>
+      </div>
+    </section>
+
+    <!-- ===== FEATURED: ARIA SVS ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="card mint fade-in" style="padding: 34px;">
+          <div style="display:flex; align-items:center; gap:14px; flex-wrap:wrap;">
+            <span class="tag" style="background:var(--pink); color:#fff; border-color:var(--ink);">FEATURED</span>
+            <span class="tag">NOW BUILDING</span>
+            <span class="tag">Singing Voice Synthesis</span>
+          </div>
+
+          <h2 style="font-family:var(--font-code); font-size: clamp(1.8rem, 4vw, 2.6rem); margin: 14px 0 6px;">
+            ARIA <span style="color:var(--purple);">SVS</span>
+          </h2>
+          <p style="font-size:1.05rem; color:var(--ink); margin:0 0 18px;">
+            歌唱音声合成エンジン。<br />
+            「もっと自由に歌う AI」を目指し、モデルとツールを一体で開発しています。
+          </p>
+
+          <div class="grid cols-3">
+            <div class="card yellow" style="padding:16px;">
+              <h3 style="margin:0 0 4px;"># 品質</h3>
+              <p style="margin:0;">音として気持ちいいことを最優先に、モデル設計から見直しています。</p>
+            </div>
+            <div class="card pink" style="padding:16px;">
+              <h3 style="margin:0 0 4px;"># 操作性</h3>
+              <p style="margin:0;">誰でも触れる UI／UX を意識。エンジニアだけの道具にはしない。</p>
+            </div>
+            <div class="card cyan" style="padding:16px;">
+              <h3 style="margin:0 0 4px;"># 開かれた開発</h3>
+              <p style="margin:0;">開発過程を発信しながら、フィードバックを取り込んで進めます。</p>
+            </div>
+          </div>
+
+          <div class="mt-24" style="display:flex; gap:10px; flex-wrap:wrap;">
+            <a href="news.html" class="btn btn-pink">開発ログを見る →</a>
+            <a href="https://x.com/ARIASVS_Officia" target="_blank" rel="noopener" class="btn btn-ghost">続報を待つ (@ARIASVS_Officia)</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TECH SNAPSHOT ===== -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title"><span class="prompt">&gt;</span>Tech snapshot</h2>
+        <p class="section-lead">ARIA SVS を支える技術要素の一部です。</p>
+
+        <div class="terminal fade-in">
+          <div class="terminal-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="title">aria-svs / stack.py</span>
+          </div>
+<pre class="terminal-body"><span class="tk-com"># ARIA SVS — technical stack (WIP)</span>
+
+<span class="tk-key">language</span>   = <span class="tk-str">"Python"</span>
+<span class="tk-key">framework</span>  = <span class="tk-str">"PyTorch"</span>
+<span class="tk-key">audio</span>      = [<span class="tk-str">"librosa"</span>, <span class="tk-str">"torchaudio"</span>]
+<span class="tk-key">pipeline</span>   = [
+    <span class="tk-str">"score → phoneme"</span>,
+    <span class="tk-str">"phoneme → acoustic feats"</span>,
+    <span class="tk-str">"feats → waveform (vocoder)"</span>,
+]
+
+<span class="tk-com"># goal</span>
+<span class="tk-fn">def</span> <span class="tk-fn">goal</span>():
+    <span class="tk-prompt">return</span> <span class="tk-str">"自然な歌声を、誰でも作れるエンジンに。"</span>
+</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMING SOON ===== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title"><span class="prompt">&gt;</span>Coming soon</h2>
+        <p class="section-lead">これから公開予定のもの。</p>
+
+        <div class="grid cols-2">
+          <div class="card pink fade-in">
+            <div class="tag-row"><span class="tag">demo</span></div>
+            <h3># 歌唱デモ音源</h3>
+            <p>モデルの現時点の出力をサンプルとして公開予定。</p>
+          </div>
+          <div class="card cyan fade-in">
+            <div class="tag-row"><span class="tag">docs</span></div>
+            <h3># 技術メモ</h3>
+            <p>設計判断や学習ログを、読み物として少しずつ出します。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="copyright">© 2025 yui2024 — built with ♥ and code</div>
+      <div class="socials">
+        <a href="https://x.com/ARIASVS_Officia" target="_blank" rel="noopener" class="social" aria-label="ARIA SVS official X">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.53 3H20.5l-6.5 7.43L21.75 21H15.7l-4.72-6.17L5.6 21H2.63l6.95-7.95L1.9 3h6.2l4.27 5.65L17.53 3zm-1.04 16.2h1.66L7.6 4.7H5.83l10.66 14.5z" fill="currentColor"/></svg>
+          <span>@ARIASVS_Officia</span>
+        </a>
+        <a href="https://x.com/yui202321" target="_blank" rel="noopener" class="social" aria-label="X (Twitter)">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.53 3H20.5l-6.5 7.43L21.75 21H15.7l-4.72-6.17L5.6 21H2.63l6.95-7.95L1.9 3h6.2l4.27 5.65L17.53 3zm-1.04 16.2h1.66L7.6 4.7H5.83l10.66 14.5z" fill="currentColor"/></svg>
+          <span>@yui202321</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
