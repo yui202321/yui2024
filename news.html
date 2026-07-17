@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News — yui2024</title>
+  <meta name="description" content="yui2024 の活動・開発ログ。" />
+  <link rel="icon" href="assets/img/my_account.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700;800&family=M+PLUS+Rounded+1c:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <span class="brand-cursor">&gt;</span>
+        <span>yui2024</span>
+        <span class="brand-underscore" aria-hidden="true"></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="menu">MENU</button>
+      <nav class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="works.html">Works</a>
+        <a href="news.html" class="is-active">News</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="eyebrow">// news.log</div>
+        <h1><span style="color:var(--pink);">&gt;</span> News</h1>
+        <p>更新情報・開発の記録。</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="timeline">
+
+          <article class="timeline-item fade-in">
+            <div class="timeline-date">2025.12.06</div>
+            <h3 class="timeline-title">ARIA SVS 開発開始</h3>
+            <p class="timeline-body">
+              歌唱音声合成エンジン「ARIA SVS」の開発を正式にスタートしました。
+              モデル設計とデータ整備からのスタートです。続報は本ページと X で発信します。
+            </p>
+            <div class="tag-row mt-8">
+              <span class="tag">ARIA SVS</span>
+              <span class="tag">kickoff</span>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="mt-24 card yellow fade-in" style="padding: 22px;">
+          <h3 style="font-family:var(--font-code); margin:0 0 8px;"># この先の予定</h3>
+          <p style="margin:0;">
+            進捗が出るたびに、ここに追記していきます。<br />
+            ARIA SVS の続報は <a href="https://x.com/ARIASVS_Officia" target="_blank" rel="noopener">X (@ARIASVS_Officia)</a>、開発者の動きは <a href="https://x.com/yui202321" target="_blank" rel="noopener">@yui202321</a> をチェック。
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="copyright">© 2025 yui2024 — built with ♥ and code</div>
+      <div class="socials">
+        <a href="https://x.com/ARIASVS_Officia" target="_blank" rel="noopener" class="social" aria-label="ARIA SVS official X">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.53 3H20.5l-6.5 7.43L21.75 21H15.7l-4.72-6.17L5.6 21H2.63l6.95-7.95L1.9 3h6.2l4.27 5.65L17.53 3zm-1.04 16.2h1.66L7.6 4.7H5.83l10.66 14.5z" fill="currentColor"/></svg>
+          <span>@ARIASVS_Officia</span>
+        </a>
+        <a href="https://x.com/yui202321" target="_blank" rel="noopener" class="social" aria-label="X (Twitter)">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.53 3H20.5l-6.5 7.43L21.75 21H15.7l-4.72-6.17L5.6 21H2.63l6.95-7.95L1.9 3h6.2l4.27 5.65L17.53 3zm-1.04 16.2h1.66L7.6 4.7H5.83l10.66 14.5z" fill="currentColor"/></svg>
+          <span>@yui202321</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

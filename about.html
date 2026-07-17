@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — yui2024</title>
+  <meta name="description" content="yui2024 のプロフィール。技術スタック、活動内容、SNSリンク。" />
+  <link rel="icon" href="assets/img/my_account.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700;800&family=M+PLUS+Rounded+1c:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <span class="brand-cursor">&gt;</span>
+        <span>yui2024</span>
+        <span class="brand-underscore" aria-hidden="true"></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="menu">MENU</button>
+      <nav class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="is-active">About</a>
+        <a href="works.html">Works</a>
+        <a href="news.html">News</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="eyebrow">// about.md</div>
+        <h1><span style="color:var(--pink);">&gt;</span> About yui2024</h1>
+        <p>作っているものと、その背景。</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="profile">
+          <div class="profile-avatar fade-in">
+            <img src="assets/img/my_account.jpg" alt="yui2024 icon" />
+          </div>
+
+          <div class="fade-in">
+            <h2 style="font-family:var(--font-code); margin:0 0 6px; font-size:1.6rem;">yui2024</h2>
+            <p style="color:var(--ink-soft); margin: 0 0 20px;">Developer / AI vocal synthesis を作っています。</p>
+
+            <dl class="kv">
+              <dt># name</dt>
+              <dd>yui2024</dd>
+              <dt># role</dt>
+              <dd>Developer / AI Researcher (SVS)</dd>
+              <dt># building</dt>
+              <dd>ARIA SVS — 歌唱音声合成エンジン</dd>
+              <dt># interests</dt>
+              <dd>Singing Voice Synthesis, DSP, ML/AI, Product</dd>
+              <dt># status</dt>
+              <dd><span class="tag" style="background:var(--mint);">Now building</span></dd>
+            </dl>
+
+            <div class="mt-24">
+              <div style="font-family:var(--font-code); color:var(--pink); font-size:.9rem;"># find me on</div>
+              <div class="socials mt-8">
+                <a href="https://x.com/yui202321" target="_blank" rel="noopener" class="social" aria-label="X (Twitter)">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.53 3H20.5l-6.5 7.43L21.75 21H15.7l-4.72-6.17L5.6 21H2.63l6.95-7.95L1.9 3h6.2l4.27 5.65L17.53 3zm-1.04 16.2h1.66L7.6 4.7H5.83l10.66 14.5z" fill="currentColor"/></svg>
+                  <span>@yui202321</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TECH STACK ===== -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title"><span class="prompt">&gt;</span>Tech Stack</h2>
+        <p class="section-lead">よく触っているもの。</p>
+
+        <div class="grid cols-2">
+          <div class="card pink fade-in">
+            <h3># Python — AI / 機械学習</h3>
+            <p>モデルの学習・推論、データ前処理まで Python で組んでいます。ディープラーニング周りは PyTorch を中心に。</p>
+            <div class="tag-row">
+              <span class="tag">Python</span>
+              <span class="tag">PyTorch</span>
+              <span class="tag">NumPy</span>
+              <span class="tag">librosa</span>
+            </div>
+          </div>
+
+          <div class="card cyan fade-in">
+            <h3># 音声合成 / 歌唱合成</h3>
+            <p>SVS (Singing Voice Synthesis) の仕組みと、それを実運用できる形にするためのツール設計。</p>
+            <div class="tag-row">
+              <span class="tag">SVS</span>
+              <span class="tag">DiffSinger</span>
+              <span class="tag">Vocoder</span>
+              <span class="tag">DSP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== VISION ===== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title"><span class="prompt">&gt;</span>Vision</h2>
+        <p class="section-lead">なぜ作っているか。</p>
+
+        <div class="terminal fade-in" style="max-width: 780px;">
+          <div class="terminal-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="title">vision.txt</span>
+          </div>
+<pre class="terminal-body"><span class="tk-com"># なぜ ARIA SVS を作るのか</span>
+
+<span class="tk-prompt">&gt;</span> 歌う AI は、まだ「難しい人だけの道具」になりがち。
+<span class="tk-prompt">&gt;</span> 誰でも <span class="tk-str">"歌わせたい声"</span> を、そのまま歌わせられる。
+<span class="tk-prompt">&gt;</span> そんな未来を、コードから作りたい。
+
+<span class="tk-com"># つくるうえで大事にしていること</span>
+- <span class="tk-fn">quality</span>()  <span class="tk-com">// 音として気持ちいいこと</span>
+- <span class="tk-fn">simple</span>()   <span class="tk-com">// 触ればわかる UI</span>
+- <span class="tk-fn">open</span>()     <span class="tk-com">// 開かれた開発</span>
+</pre>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="copyright">© 2025 yui2024 — built with ♥ and code</div>
+      <div class="socials">
+        <a href="https://x.com/yui202321" target="_blank" rel="noopener" class="social" aria-label="X (Twitter)">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.53 3H20.5l-6.5 7.43L21.75 21H15.7l-4.72-6.17L5.6 21H2.63l6.95-7.95L1.9 3h6.2l4.27 5.65L17.53 3zm-1.04 16.2h1.66L7.6 4.7H5.83l10.66 14.5z" fill="currentColor"/></svg>
+          <span>@yui202321</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

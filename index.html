@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>yui2024 — Official Site</title>
+  <meta name="description" content="yui2024 の公式サイト。歌唱AI「ARIA SVS」を開発しています。" />
+  <link rel="icon" href="assets/img/my_account.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700;800&family=M+PLUS+Rounded+1c:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <span class="brand-cursor">&gt;</span>
+        <span>yui2024</span>
+        <span class="brand-underscore" aria-hidden="true"></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="menu">MENU</button>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="is-active">Home</a>
+        <a href="about.html">About</a>
+        <a href="works.html">Works</a>
+        <a href="news.html">News</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <span class="shape s1" aria-hidden="true"></span>
+      <span class="shape s2" aria-hidden="true"></span>
+      <div class="container hero-inner">
+        <div class="fade-in">
+          <span class="hero-eyebrow">/ Developer &amp; AI Vocal Synthesis</span>
+          <h1 class="hero-title">
+            <span class="prompt">&gt;</span>歌う <span class="accent-cyan">AI</span> を、<br />
+            もっと<span class="accent-purple">自由</span>に。
+          </h1>
+          <p class="hero-sub">
+            yui2024 のポートフォリオサイトへようこそ。<br />
+            歌唱合成エンジン「ARIA SVS」を開発しています。
+          </p>
+          <div class="hero-ctas">
+            <a href="works.html" class="btn btn-pink">Works を見る →</a>
+            <a href="about.html" class="btn btn-cyan">About</a>
+          </div>
+        </div>
+
+        <div class="fade-in">
+          <div class="terminal" role="img" aria-label="terminal window">
+            <div class="terminal-bar">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="title">yui2024 — bash</span>
+            </div>
+            <pre class="terminal-body"><span class="tk-com"># whoami</span>
+<span class="tk-prompt">$</span> <span class="tk-fn">whoami</span>
+yui2024
+
+<span class="tk-com"># what am I building?</span>
+<span class="tk-prompt">$</span> <span class="tk-fn">cat</span> project.json
+{
+  <span class="tk-key">"name"</span>: <span class="tk-str">"ARIA SVS"</span>,
+  <span class="tk-key">"type"</span>: <span class="tk-str">"Singing Voice Synthesis"</span>,
+  <span class="tk-key">"stack"</span>: [<span class="tk-str">"Python"</span>, <span class="tk-str">"PyTorch"</span>],
+  <span class="tk-key">"status"</span>: <span class="tk-str">"in development"</span>
+}
+<span class="tk-prompt">$</span> <span class="brand-underscore" aria-hidden="true"></span>
+</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT PREVIEW ===== -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title"><span class="prompt">&gt;</span>What I do</h2>
+        <p class="section-lead">3 つの領域で活動しています。</p>
+
+        <div class="grid cols-3">
+          <div class="card pink fade-in">
+            <h3># AI 開発</h3>
+            <p>Python / PyTorch をベースに、歌唱合成のためのモデルを組んでいます。</p>
+            <div class="tag-row">
+              <span class="tag">Python</span><span class="tag">PyTorch</span>
+            </div>
+          </div>
+          <div class="card cyan fade-in">
+            <h3># 音声合成</h3>
+            <p>SVS (Singing Voice Synthesis) の研究と、それを人が使える形に落とし込むことに関心があります。</p>
+            <div class="tag-row">
+              <span class="tag">SVS</span><span class="tag">DSP</span>
+            </div>
+          </div>
+          <div class="card yellow fade-in">
+            <h3># プロダクト設計</h3>
+            <p>技術をそのまま並べるのではなく、使う人が触りたくなる形を意識しています。</p>
+            <div class="tag-row">
+              <span class="tag">UX</span><span class="tag">Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURED WORK ===== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title"><span class="prompt">&gt;</span>Featured</h2>
+        <p class="section-lead">今、いちばん力を入れているプロジェクト。</p>
+
+        <div class="card mint fade-in" style="padding: 32px;">
+          <div style="display:flex; align-items:center; gap:14px; flex-wrap:wrap;">
+            <span class="tag">NOW BUILDING</span>
+            <span class="tag">SVS</span>
+            <span class="tag">Python</span>
+          </div>
+          <h3 style="font-size:1.6rem; margin: 14px 0 8px;">ARIA SVS</h3>
+          <p>
+            歌唱音声合成 (Singing Voice Synthesis) エンジン。
+            「もっと自由に歌う AI」を目指して、モデルとツールを一体で開発中。
+          </p>
+          <div class="mt-16" style="display:flex; gap:10px; flex-wrap:wrap;">
+            <a href="works.html" class="btn btn-pink">詳しく見る →</a>
+            <a href="https://x.com/ARIASVS_Officia" target="_blank" rel="noopener" class="btn btn-ghost">@ARIASVS_Officia</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LATEST NEWS ===== -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title"><span class="prompt">&gt;</span>Latest</h2>
+        <p class="section-lead">最新の動き。</p>
+
+        <div class="timeline">
+          <div class="timeline-item fade-in">
+            <div class="timeline-date">2025.12.06</div>
+            <h3 class="timeline-title">ARIA SVS 開発開始</h3>
+            <p class="timeline-body">歌唱音声合成エンジン「ARIA SVS」の開発をスタートしました。</p>
+          </div>
+        </div>
+
+        <div class="mt-24">
+          <a href="news.html" class="btn btn-yellow">News 一覧へ →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="copyright">© 2025 yui2024 — built with ♥ and code</div>
+      <div class="socials">
+        <a href="https://x.com/yui202321" target="_blank" rel="noopener" class="social" aria-label="X (Twitter)">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.53 3H20.5l-6.5 7.43L21.75 21H15.7l-4.72-6.17L5.6 21H2.63l6.95-7.95L1.9 3h6.2l4.27 5.65L17.53 3zm-1.04 16.2h1.66L7.6 4.7H5.83l10.66 14.5z" fill="currentColor"/></svg>
+          <span>@yui202321</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
