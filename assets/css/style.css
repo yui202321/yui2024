@@ -411,6 +411,54 @@ img { max-width: 100%; display: block; }
 }
 .timeline-body { color: var(--ink-soft); margin: 0; }
 
+/* -------- event box -------- */
+.event-box {
+  background: var(--yellow);
+  border: 2px solid var(--ink);
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-family: var(--font-code);
+  box-shadow: var(--shadow-soft);
+}
+.event-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 0;
+  font-size: .95rem;
+  flex-wrap: wrap;
+}
+.event-row + .event-row { border-top: 1.5px dashed rgba(45,48,71,.25); }
+.event-day {
+  background: var(--pink);
+  color: #fff;
+  border: 1.5px solid var(--ink);
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-weight: 700;
+  font-size: .85rem;
+}
+.event-time {
+  margin-left: auto;
+  color: var(--purple);
+  font-weight: 700;
+}
+@media (max-width: 520px) {
+  .event-time { margin-left: 0; }
+}
+
+/* -------- hot tag (upcoming) -------- */
+.tag-hot {
+  background: var(--pink) !important;
+  color: #fff !important;
+  border-color: var(--ink) !important;
+  animation: pulse 1.8s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.06); }
+}
+
 /* -------- socials -------- */
 .socials { display: flex; gap: 10px; flex-wrap: wrap; }
 .social {
